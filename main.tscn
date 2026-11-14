@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://bfkv4nekb7at8"]
 
-[ext_resource type="Script" uid="uid://b4v7r81uj4ffe" path="res://player.gd" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://b4v7r81uj4ffe" path="res://scripts/player.gd" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://cdtaenmxa5q1y" path="res://textures/Basketball.png" id="2_h2yge"]
 [ext_resource type="Texture2D" uid="uid://cgiyggrybht5q" path="res://textures/world_tileset.png" id="3_h2yge"]
 
