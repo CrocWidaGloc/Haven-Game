@@ -1,5 +1,14 @@
 [gd_scene format=3 uid="uid://bfkv4nekb7at8"]
 
+[ext_resource type="Script" uid="uid://b4v7r81uj4ffe" path="res://player.gd" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://cdtaenmxa5q1y" path="res://textures/Basketball.png" id="2_h2yge"]
+
 [node name="main" type="Node2D" unique_id=890969969]
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=1088747583]
+position = Vector2(112, 75)
+script = ExtResource("1_0xm2m")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=1669188363]
+scale = Vector2(0.2647059, 0.2647059)
+texture = ExtResource("2_h2yge")
