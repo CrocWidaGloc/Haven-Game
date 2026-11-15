@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://cj8esn4770m2n" path="res://textures/key-blue.png" id="5_lquwl"]
 [ext_resource type="Script" uid="uid://b8k7ev4itjmkh" path="res://area_2d.gd" id="6_7mycd"]
 [ext_resource type="Texture2D" uid="uid://voqenn153sqa" path="res://textures/S001_nyknck.png" id="6_272bh"]
+[ext_resource type="Script" uid="uid://dij015wwpat2i" path="res://enemy.gd" id="7_5vw27"]
+[ext_resource type="Texture2D" uid="uid://dix40vfmkwh7n" path="res://textures/rocket_guy.png" id="8_kek77"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1bvp3"]
 texture = ExtResource("3_h2yge")
@@ -477,6 +479,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hbqm1"]
+size = Vector2(728, 361)
+
 [node name="main" type="Node2D" unique_id=890969969]
 
 [node name="Sprite2D2" type="Sprite2D" parent="." unique_id=20113647]
@@ -494,7 +499,7 @@ tile_map_data = PackedByteArray("AAAAABcAAAAHAAAAAAABABcAAAAHAAAAAAACABcAAAAHAAA
 tile_set = SubResource("TileSet_aq7rk")
 
 [node name="key" type="Area2D" parent="." unique_id=1272616418 groups=["key"]]
-position = Vector2(134, -324)
+position = Vector2(340, 318)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="key" unique_id=1794187969]
 scale = Vector2(1.0000001, 1.1078128)
@@ -545,3 +550,16 @@ autoplay = "default"
 position = Vector2(619, -989)
 sprite_frames = SubResource("SpriteFrames_vrvny")
 autoplay = "default"
+
+[node name="Enemy" type="Area2D" parent="." unique_id=749255301]
+position = Vector2(362, -1203)
+script = ExtResource("7_5vw27")
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemy" unique_id=1624140533]
+position = Vector2(1, 32)
+texture = ExtResource("8_kek77")
+flip_v = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy" unique_id=576280799]
+position = Vector2(1, 20.5)
+shape = SubResource("RectangleShape2D_hbqm1")
