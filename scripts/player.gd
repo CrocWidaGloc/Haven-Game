@@ -29,7 +29,3 @@ func _on_area_2d_area_entered(area: Area2D):
 	if area.is_in_group("key"):
 		$keyhold.visible = true
 		area.queue_free()
-
-
-func _on_star_2_sprite_frames_changed() -> void:
-	pass # Replace with function body.
