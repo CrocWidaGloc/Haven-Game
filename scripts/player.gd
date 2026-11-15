@@ -1,5 +1,5 @@
 extends CharacterBody2D
-var holdKey = 0
+var holdkey = 0
 var speed = 300.0
 var jump_speed = -350.0
 
@@ -22,4 +22,5 @@ func _physics_process(delta):
 
 func _on_area_2d_area_entered(area: Area2D):
 	if area.is_in_group("key"):
+		
 		area.queue_free()
