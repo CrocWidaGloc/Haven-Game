@@ -3,6 +3,14 @@
 [ext_resource type="Texture2D" uid="uid://yjd2tiwo5708" path="res://textures/yfrWWc.jpg" id="1_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://ceppsmdkjnjby" path="res://player.tscn" id="1_lquwl"]
 [ext_resource type="Texture2D" uid="uid://cgiyggrybht5q" path="res://textures/world_tileset.png" id="3_h2yge"]
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+[ext_resource type="Texture2D" uid="uid://dlw686n2epvup" path="res://textures/cat.png" id="3_lquwl"]
+[ext_resource type="Texture2D" uid="uid://voqenn153sqa" path="res://textures/S001_nyknck.png" id="5_7mycd"]
+=======
+>>>>>>> c4f1631c0f30dfdc92797cb35106aa0362f2e810
+>>>>>>> Stashed changes
 [ext_resource type="Texture2D" uid="uid://cj8esn4770m2n" path="res://textures/key-blue.png" id="5_lquwl"]
 [ext_resource type="Script" uid="uid://b8k7ev4itjmkh" path="res://area_2d.gd" id="6_7mycd"]
 
@@ -319,8 +327,182 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vrvny"]
 size = Vector2(20, 32)
 
+<<<<<<< Updated upstream
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5lwfw"]
 size = Vector2(34, 32)
+=======
+<<<<<<< HEAD
+[sub_resource type="AtlasTexture" id="AtlasTexture_074og"]
+atlas = ExtResource("5_7mycd")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cegan"]
+atlas = ExtResource("5_7mycd")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_82xsv"]
+atlas = ExtResource("5_7mycd")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_getpj"]
+atlas = ExtResource("5_7mycd")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5vw27"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_074og")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cegan")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_82xsv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_getpj")
+}],
+"loop": 2,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7mycd"]
+animations = [{
+"frames": [{
+"duration": 2.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_074og")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cegan")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_82xsv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_getpj")
+}],
+"loop": 2,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ryguw"]
+atlas = ExtResource("5_7mycd")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d13ii"]
+atlas = ExtResource("5_7mycd")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1u8w0"]
+atlas = ExtResource("5_7mycd")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0odxb"]
+atlas = ExtResource("5_7mycd")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4c57u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ryguw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d13ii")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1u8w0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0odxb")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_272bh"]
+animations = [{
+"frames": [{
+"duration": 2.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_074og")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cegan")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_82xsv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_getpj")
+}],
+"loop": 2,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vrvny"]
+animations = [{
+"frames": [{
+"duration": 3.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_074og")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cegan")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_82xsv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_getpj")
+}],
+"loop": 2,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lswn8"]
+animations = [{
+"frames": [{
+"duration": 5.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_074og")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cegan")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_82xsv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_getpj")
+}],
+"loop": 2,
+"name": &"default",
+"speed": 5.0
+}]
+=======
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5lwfw"]
+size = Vector2(34, 32)
+>>>>>>> c4f1631c0f30dfdc92797cb35106aa0362f2e810
+>>>>>>> Stashed changes
 
 [node name="main" type="Node2D" unique_id=890969969]
 
@@ -352,9 +534,56 @@ speed_scale = 1.5
 texture_filter = 1
 shape = SubResource("RectangleShape2D_vrvny")
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+[node name="stars" type="Area2D" parent="." unique_id=653118558]
+
+[node name="star1" type="AnimatedSprite2D" parent="stars" unique_id=1074163920]
+position = Vector2(42.38, 207.11998)
+scale = Vector2(0.52375, 0.5550019)
+sprite_frames = SubResource("SpriteFrames_5vw27")
+autoplay = "default"
+
+[node name="star2" type="AnimatedSprite2D" parent="stars/star1" unique_id=1218341823]
+position = Vector2(59.53222, -1013.27576)
+scale = Vector2(2.2004771, 3.0123777)
+sprite_frames = SubResource("SpriteFrames_7mycd")
+autoplay = "default"
+
+[node name="star3" type="AnimatedSprite2D" parent="stars/star1" unique_id=903815880]
+sprite_frames = SubResource("SpriteFrames_4c57u")
+frame_progress = 0.68979806
+
+[node name="star4" type="AnimatedSprite2D" parent="stars" unique_id=2098975051]
+position = Vector2(643, 150)
+scale = Vector2(0.52375, 0.5550019)
+sprite_frames = SubResource("SpriteFrames_272bh")
+autoplay = "default"
+frame_progress = 0.25067988
+
+[node name="star2" type="AnimatedSprite2D" parent="stars" unique_id=1170262951]
+position = Vector2(124.026794, 53.13788)
+scale = Vector2(1.1711633, 1.2410461)
+sprite_frames = SubResource("SpriteFrames_vrvny")
+autoplay = "default"
+
+[node name="star6" type="AnimatedSprite2D" parent="stars" unique_id=1394945755]
+position = Vector2(622, -264)
+scale = Vector2(1.1711633, 1.2410461)
+sprite_frames = SubResource("SpriteFrames_lswn8")
+autoplay = "default"
+
+[connection signal="area_entered" from="Player/pickup" to="Player" method="_on_area_2d_area_entered"]
+=======
+>>>>>>> Stashed changes
 [node name="Area2D" type="Area2D" parent="." unique_id=771493468]
 position = Vector2(687, 352)
 script = ExtResource("6_7mycd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=749279510]
 shape = SubResource("RectangleShape2D_5lwfw")
+<<<<<<< Updated upstream
+=======
+>>>>>>> c4f1631c0f30dfdc92797cb35106aa0362f2e810
+>>>>>>> Stashed changes
