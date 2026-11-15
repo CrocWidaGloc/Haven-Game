@@ -2,11 +2,14 @@ extends CharacterBody2D
 
 var speed = 300.0
 var jump_speed = -350.0
+var jumpcount = 0
 
 func _physics_process(delta):
 		# Handle Jump.
 	if is_on_floor():
 		velocity.y = jump_speed
+		jumpcount += 1
+		$CanvasLayer/Jcounter.text = "Jumps: " + str(jumpcount)
 # Add the gravity.
 	velocity += get_gravity() * delta
 
@@ -26,3 +29,7 @@ func _on_area_2d_area_entered(area: Area2D):
 	if area.is_in_group("key"):
 		$keyhold.visible = true
 		area.queue_free()
+
+
+func _on_star_2_sprite_frames_changed() -> void:
+	pass # Replace with function body.
