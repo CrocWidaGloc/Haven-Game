@@ -545,7 +545,11 @@ tile_map_data = PackedByteArray("AAAAABcAAAAHAAAAAAABABcAAAAHAAAAAAACABcAAAAHAAA
 tile_set = SubResource("TileSet_aq7rk")
 
 [node name="key" type="Area2D" parent="." unique_id=1272616418 groups=["key"]]
+<<<<<<< HEAD
 position = Vector2(39, -1000)
+=======
+position = Vector2(134, -324)
+>>>>>>> 9adb4cbb97de4da6773a713ae150b1d18adac56b
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="key" unique_id=1794187969]
 scale = Vector2(1.0000001, 1.1078128)
