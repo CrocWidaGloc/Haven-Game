@@ -9,6 +9,7 @@ func _physics_process(delta):
 	if is_on_floor():
 		velocity.y = jump_speed
 		jumpcount += 1
+		$CanvasLayer/Jcounter.text = "Jumps: " + str(jumpcount)
 # Add the gravity.
 	velocity += get_gravity() * delta
 
