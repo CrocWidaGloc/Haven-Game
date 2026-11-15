@@ -4,7 +4,6 @@ var speed = 300.0
 var jump_speed = -350.0
 
 func _physics_process(delta):
-	var Jump = ("ui_up")
 		# Handle Jump.
 	if is_on_floor():
 		velocity.y = jump_speed
@@ -15,11 +14,14 @@ func _physics_process(delta):
 	# Get the input direction.
 	var direction = Input.get_axis("ui_left", "ui_right")
 	velocity.x = direction * speed
+	if velocity.x != 0:
+		$ball.flip_v = false
+		$ball.flip_h = velocity.x < 0
 
 	move_and_slide()
 	
 
-
+#the key
 func _on_area_2d_area_entered(area: Area2D):
 	if area.is_in_group("key"):
 		$keyhold.visible = true
