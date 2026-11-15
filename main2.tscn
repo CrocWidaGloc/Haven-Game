@@ -6,8 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://cj8esn4770m2n" path="res://textures/key-blue.png" id="4_0rof8"]
 [ext_resource type="Texture2D" uid="uid://cgiyggrybht5q" path="res://textures/world_tileset.png" id="5_w8cd7"]
 [ext_resource type="Texture2D" uid="uid://voqenn153sqa" path="res://textures/S001_nyknck.png" id="6_sck4r"]
-[ext_resource type="Script" uid="uid://dij015wwpat2i" path="res://enemy.gd" id="7_0rof8"]
-[ext_resource type="Texture2D" uid="uid://dix40vfmkwh7n" path="res://textures/rocket_guy.png" id="7_1mhn8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1bvp3"]
 texture = ExtResource("5_w8cd7")
@@ -476,9 +474,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0rof8"]
-size = Vector2(728, 322)
-
 [node name="main" type="Node2D" unique_id=890969969]
 
 [node name="Sprite2D2" type="Sprite2D" parent="." unique_id=20113647]
@@ -548,16 +543,3 @@ autoplay = "default"
 position = Vector2(639, -946)
 sprite_frames = SubResource("SpriteFrames_bbj40")
 autoplay = "default"
-
-[node name="Enemy" type="Area2D" parent="." unique_id=1209733110]
-position = Vector2(362, -1203)
-script = ExtResource("7_0rof8")
-
-[node name="Sprite2D" type="Sprite2D" parent="Enemy" unique_id=824901458]
-position = Vector2(1, 32)
-texture = ExtResource("7_1mhn8")
-flip_v = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy" unique_id=507749932]
-position = Vector2(1, 1)
-shape = SubResource("RectangleShape2D_0rof8")
